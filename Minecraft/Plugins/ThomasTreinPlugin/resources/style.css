@@ -1,0 +1,142 @@
+body {
+    height: 100%;
+    background-color: #333;
+    color: #ffffff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+footer {
+    color: rgba(255, 255, 255, .5);
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: Nunito;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* background: coral; */
+    min-height: 50px;
+    align-items: center;
+}
+
+.Title {
+    font-size: 20px;
+    font-family: Nunito;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    /* letter-spacing: 2px; */
+    font-family: Nunito;
+}
+
+@media screen and (max-width: 1020px) {
+    .nav-link {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        /* background: coral; */
+        top: 1vh;
+        /* background-color: coral; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        transform: translateX(100%);
+    }
+    .nav-link li {
+        opacity: 0;
+    }
+}
+
+.cover {
+    padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+}
+
+.download-btn {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #333;
+    font-weight: bold;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    display: block;
+    font-family: Nunito;
+    font-size: 15px;
+}
+
+.download-btn-round {
+    border-radius: 25px;
+}
+
+.download-btn {
+    background-color: white;
+}
+
+.center {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 45%;
+}
