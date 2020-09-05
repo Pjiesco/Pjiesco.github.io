@@ -124,14 +124,16 @@ input {
     display: block;
     font-family: Nunito;
     font-size: 15px;
+    text-decoration: none;
+    background-color: white;
 }
 
 .download-btn-round {
     border-radius: 25px;
 }
 
-.download-btn {
-    background-color: white;
+.download-btn:hover {
+    text-decoration: underline;
 }
 
 .center {
